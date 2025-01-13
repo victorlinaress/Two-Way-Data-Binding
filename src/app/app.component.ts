@@ -7,10 +7,9 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  name: string ='Victor';
+  minhaProp = true
 
-  handleInputChange(event: any) {
-    console.log(event)
-    this.name = event
+  toggleProp() {
+    this.minhaProp = !this.minhaProp
   }
 }
